@@ -1,0 +1,20 @@
+Automatic counting (ARC) is a apple technology in which works during compilation and can helps with manage memory. ARC retains, releases, 
+autorelease, and performs various of other functions. Arc saves the life cycle of each variable within a reasonable range, in order to 
+achieve automatic memory management within the code. ARC let you have the ability to no longer need to think about when to use retain, 
+release, and autorelease functions to manage memory. It provides functionalities of automatically evaluating the memory lifetime and 
+automatically adding appropriate memory management methods during compilation. The compiler will also automatically generate the 
+dealloc function. 
+
+In order for ARC to work smoothly, the following rules are added:
+
+- deallocate
+- retain 
+- release
+- retainCount
+- autorelease. 
+
+ARC introduces several new lifetime qualifiers for objects which is called  zeroing weak references. A weak reference means that memory
+allocated within the scope of the instruction in which is being executed will extend the lifetime  of the object it points to. 
+A zeroing weak reference automatically becomes nil if the object it points to is deallocated. It is possible to use lifetime qualifiers 
+to avoid strong reference cycles. 
+ 
